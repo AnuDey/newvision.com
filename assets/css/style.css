@@ -475,6 +475,7 @@ section {
   margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -539,12 +540,22 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+ .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 60px 20px;
+  height: 500px;
   transition: all ease-in-out 0.3s;
   background: #fff;
+  margin-bottom: 40px;
+  padding: 40px;
+
+  
+}
+
+.icon-box i{
+  font-size: 30px;
+  color: orange;
 }
 /* .services .icon-box .icon {
   margin: 0 auto;
@@ -561,7 +572,7 @@ section {
   font-size: 28px;
   width: 300px;
   height: 200px;
-  margin: -40px auto;
+  margin: 35px auto;
   background: #ffc451;
   border-radius: 4px;
   display: flex;
@@ -572,7 +583,7 @@ section {
 }
 .services .icon-box h4 {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   font-size: 24px;
 }
 .services .icon-box h4 a {
@@ -586,6 +597,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-align: center;
 }
 .services .icon-box:hover {
   border-color: #fff;
@@ -665,11 +677,11 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(21, 21, 21, 0.6);
+  /* background: rgba(179, 37, 37, 0.6); */
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(21, 21, 21, 0.6);
+  /* background: rgba(21, 21, 21, 0.6); */
   position: absolute;
   left: 0;
   right: 0;
@@ -679,16 +691,23 @@ section {
   z-index: 2;
   opacity: 0;
 }
+.portfolio .portfolio-wrap video {
+  transition: all ease-in-out 0.3s;
+  height: 400px;
+  width: 100%;
+}
 .portfolio .portfolio-wrap img {
   transition: all ease-in-out 0.3s;
+  height: 400px;
+  width: 100%;
 }
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 70px;
+  left: 50px;
+  bottom: 20px;
   right: 0;
-  bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
   display: flex;
@@ -698,9 +717,10 @@ section {
   padding: 20px;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
@@ -727,11 +747,20 @@ section {
 .portfolio .portfolio-wrap:hover::before {
   opacity: 1;
 }
+.portfolio .portfolio-wrap:hover video {
+  transform: scale(1.2);
+}
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.2);
 }
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+}
+.portfolio-lightbox i{
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -950,24 +979,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# Reason
 --------------------------------------------------------------*/
-.team {
+.reason {
   background: #fff;
   padding: 60px 0;
 }
-.team .member {
+.reason .member {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.team .member .member-img {
+.reason .member .member-img {
   position: relative;
   overflow: hidden;
 }
-.team .member .social {
+.reason .member .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -976,7 +1005,7 @@ section {
   transition: ease-in-out 0.3s;
   text-align: center;
 }
-.team .member .social a {
+.reason .member .social a {
   transition: color 0.3s;
   color: #151515;
   margin: 0 3px;
@@ -990,38 +1019,48 @@ section {
   justify-content: center;
   align-items: center;
 }
-.team .member .social a:hover {
+.reason .member .social a:hover {
   color: #151515;
   background: #ffc451;
 }
-.team .member .social i {
+.reason .member .social i {
   font-size: 18px;
   line-height: 0;
 }
-.team .member .member-info {
+.reason .member .member-info {
   padding: 25px 15px;
 }
-.team .member .member-info h4 {
+.reason .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
   color: #151515;
 }
-.team .member .member-info span {
+.reason .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
 }
-.team .member .member-info p {
+.reason .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
   color: #777777;
 }
-.team .member:hover .social {
+.reason .member:hover .social {
   opacity: 1;
   bottom: 15px;
+}
+
+.add-slide{
+  margin-top: 50px;
+}
+
+.add-slide img{
+  height: 150px;
+  width: 500px;
+  margin-left: 20px;
 }
 
 /*--------------------------------------------------------------
