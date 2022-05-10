@@ -157,12 +157,20 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.header-text{
+  color: #fff!important;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family:fantasy;
+}
+
+
 #header .logo a {
   color:gray;
 }
 #header .logo img {
   height: 50px;
-  width: 80px;
+  width: 100px;
 }
 
 /* 
@@ -310,6 +318,7 @@ h1, h2, h3, h4, h5, h6 {
   /* background: url("../img/cover1.jpg") top center; */
   background-size: cover;
   position: relative;
+  margin-bottom: -60px;
 }
 #hero:before {
   content: "";
@@ -984,6 +993,7 @@ section {
 .reason {
   background: #fff;
   padding: 60px 0;
+  margin-top: -150px;
 }
 .reason .member {
   margin-bottom: 20px;
@@ -1194,6 +1204,7 @@ section {
   background: whitesmoke;
   min-height: 40px;
   margin-top: 74px;
+  margin-bottom: -60px;
 }
 .breadcrumbs h2 {
   font-size: 28px;
@@ -1246,6 +1257,7 @@ section {
 }
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+  padding: 20px;
 }
 #footer .footer-top .footer-info h3 {
   font-size: 28px;
@@ -1293,6 +1305,7 @@ section {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  padding: 20px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
