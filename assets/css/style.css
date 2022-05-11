@@ -549,6 +549,12 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.image img{
+  height: 350px;
+  width: 100vw;
+}
+
  .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
